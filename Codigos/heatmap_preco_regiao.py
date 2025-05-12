@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Caminho do arquivo CSV consolidado
-data_path = r'C:\Users\yuriu\Desktop\TCC\Data\dataset_combustiveis_automotivos_2004_2024.csv'
+data_path = r''
 
 # Carrega os dados
 df = pd.read_csv(data_path, parse_dates=['DATA DA COLETA'], dayfirst=True)
@@ -31,6 +31,6 @@ plt.ylabel('Região')
 plt.yticks(rotation=0)
 plt.tight_layout()
 
-# Salva o gráfico
-plt.savefig(r'C:\Users\yuriu\Desktop\TCC\src\Graficos\grafico_heatmap_gasolina_regiao_ano.png', dpi=300)
+# Caminho para salvamento da imagem gerada
+plt.savefig(r'\Graficos\grafico_heatmap_gasolina_regiao_ano.png', dpi=300)
 plt.show()
