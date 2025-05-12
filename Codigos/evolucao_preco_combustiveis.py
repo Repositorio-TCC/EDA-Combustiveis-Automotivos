@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 # Caminho do dataset
-data_path = r'C:\Users\yuriu\Desktop\TCC\Data\dataset_combustiveis_automotivos_2004_2024.csv'
+data_path = r''
 
 # Carrega o dataset com datas
 df = pd.read_csv(data_path, parse_dates=['DATA DA COLETA'], dayfirst=True)
@@ -44,5 +44,6 @@ plt.xticks(rotation=45)
 
 # Layout e salvamento
 plt.tight_layout()
-plt.savefig(r'C:\Users\yuriu\Desktop\TCC\src\Graficos\grafico_evolucao_precos_combustiveis.png', dpi=300)
+# Caminho para salvamento da imagem gerada
+plt.savefig(r'\Graficos\grafico_evolucao_precos_combustiveis.png', dpi=300)
 plt.show()
