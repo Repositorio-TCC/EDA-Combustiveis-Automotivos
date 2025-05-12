@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 
 # Carrega os dados
 df = pd.read_csv(
-    r'C:\Users\yuriu\Desktop\TCC\Data\dataset_combustiveis_automotivos_2004_2024.csv',
+    #Caminho do dataset
+    r'',
     parse_dates=['DATA DA COLETA'],
     dayfirst=True
 )
@@ -24,6 +25,6 @@ plt.ylabel('Estado')
 plt.grid(axis='x', linestyle='--', alpha=0.7)
 plt.tight_layout()
 
-# Salva imagem
-plt.savefig(r'C:\Users\yuriu\Desktop\TCC\src\Graficos\grafico_gasolina_por_estado_2024.png', dpi=300)
+# Caminho para salvamento da imagem gerada
+plt.savefig(r'\Graficos\grafico_gasolina_por_estado_2024.png', dpi=300)
 plt.show()
