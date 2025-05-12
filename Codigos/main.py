@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Caminho onde estão os arquivos CSV
-data_path = r'C:\Users\yuriu\Desktop\TCC\Data'
+data_path = r''
 files = sorted([f for f in os.listdir(data_path) if f.lower().endswith('.csv')])
 
 dfs = []
