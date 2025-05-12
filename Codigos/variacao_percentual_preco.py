@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Carrega dataset
-data_path = r'C:\Users\yuriu\Desktop\TCC\Data\dataset_combustiveis_automotivos_2004_2024.csv'
+data_path = r''
 df = pd.read_csv(data_path, parse_dates=['DATA DA COLETA'], dayfirst=True)
 
 # Filtra apenas os combustíveis desejados
@@ -47,6 +47,6 @@ plt.grid(True, linestyle='--', alpha=0.5)
 plt.legend(title='Combustível')
 plt.tight_layout()
 
-# Salva imagem
-plt.savefig(r'C:\Users\yuriu\Desktop\TCC\src\Graficos\grafico_variacao_percentual.png', dpi=300)
+# Caminho para salvamento da imagem gerada
+plt.savefig(r'\Graficos\grafico_variacao_percentual.png', dpi=300)
 plt.show()
